@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.calculator {
+  width: 400px;
+  height: 470px;
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 1rem;
+}
+
+.screens {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #333;
+  color: whitesmoke;
+  min-height: 5rem;
+  border-radius: 0.3rem;
+}
+
+.screens span {
+  text-align: right;
+}
+
+.first-screen {
+  color: lightgray;
+  font-size: 1.1rem;
+}
+
+.second-screen.normal {
+  font-size: 2rem;
+}
+
+.second-screen.small {
+  font-size: 1.6rem;
+}
+
+.inputsWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  margin-top: 0.2rem;
+  padding: 0.7rem;
+}
+
+.inputsWrapper button {
+  height: 60px;
+  border: 1px solid #fff;
+  outline: none;
+  font-size: 1rem;
+  color: orangered;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.inputsWrapper button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.inputsWrapper button.featured {
+  background-color: orangered;
+  color: white;
+}
+
+.inputsWrapper button.featured:hover {
+  background-color: #ff6b00;
+}
