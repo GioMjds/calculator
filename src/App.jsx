@@ -132,42 +132,42 @@ const App = () => {
   };
 
   const compute = () => {
-    // if (
-    //   calc.firstOperand !== null &&
-    //   calc.secondOperand !== null &&
-    //   calc.operator !== null
-    // ) {
-    //   let result = "";
+    if (
+      calc.firstOperand !== null &&
+      calc.secondOperand !== null &&
+      calc.operator !== null
+    ) {
+      let result = "";
 
-    //   const firstOperand = parseFloat(calc.firstOperand);
-    //   const secondOperand = parseFloat(calc.secondOperand);
+      const firstOperand = parseFloat(calc.firstOperand);
+      const secondOperand = parseFloat(calc.secondOperand);
 
-    //   if (isNaN(firstOperand) || isNaN(secondOperand)) {
-    //     return result;
-    //   }
+      if (isNaN(firstOperand) || isNaN(secondOperand)) {
+        return result;
+      }
 
-    //   switch (calc.operator) {
-    //     case "+":
-    //       result = firstOperand + secondOperand;
-    //       break;
-    //     case "-":
-    //       result = firstOperand - secondOperand;
-    //       break;
-    //     case "*":
-    //       result = firstOperand * secondOperand;
-    //       break;
-    //     case "÷":
-    //       result =
-    //         secondOperand > 0 ? firstOperand / secondOperand : "NOT ALLOW";
-    //       break;
-    //   }
+      switch (calc.operator) {
+        case "+":
+          result = firstOperand + secondOperand;
+          break;
+        case "-":
+          result = firstOperand - secondOperand;
+          break;
+        case "*":
+          result = firstOperand * secondOperand;
+          break;
+        case "÷":
+          result =
+            secondOperand > 0 ? firstOperand / secondOperand : "NOT ALLOW";
+          break;
+      }
 
-    //   if (result !== "NOT ALLOW" && result.toString().length > 7) {
-    //     result = result.toFixed(7); // we limit decimal to 7
-    //   }
+      if (result !== "NOT ALLOW" && result.toString().length > 7) {
+        result = result.toFixed(7); // we limit decimal to 7
+      }
 
-    //   return result.toString().replace(".", ","); // This will help for the formatting.
-    // }
+      return result.toString().replace(".", ","); // This will help for the formatting.
+    }
 
     const randomWords = [
       "Miss na kita",
