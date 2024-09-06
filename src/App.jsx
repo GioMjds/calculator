@@ -178,7 +178,6 @@ const App = () => {
       "Miss you lods",
       "Sana all lahat",
       "Sana all may jowa",
-      "Something went wrong",
       "I love you",
       "Miss mo ba ko lods?",
       "I'm suffering, need you",
